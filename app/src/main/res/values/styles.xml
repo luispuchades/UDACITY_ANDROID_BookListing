@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Style for Google Books Search Service -->
+    <style name="search_service">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding_double</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <!-- Style for title to search -->
+    <style name="search_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <!-- Style for the EditText-->
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/padding_standard</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!-- Style for the Number Results-->
+    <style name="text_numberResults">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <!--Style for seekbar line Horizontal-->
+    <style name="seekbar_numberResults">
+        <item name="android:layout_marginLeft">@dimen/padding_double</item>
+        <item name="android:layout_marginRight">@dimen/padding_double</item>
+    </style>
+
+    <!-- Style for search button to search -->
+    <style name="search_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/padding_double</item>
+        <item name="android:layout_marginRight">@dimen/padding_double</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
