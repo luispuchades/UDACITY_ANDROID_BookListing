@@ -10,4 +10,10 @@
     /* Message if no text written */
     <string name="no_input_text_message">Please, to continue input a search text at least twith 3 characters long.</string>
 
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- Text to display in the list when there are no books [CHAR LIMIT=NONE] -->
+    <string name="no_books">No books found</string>
+
 </resources>

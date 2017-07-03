@@ -136,6 +136,11 @@ public class SearchActivity extends AppCompatActivity {
         // Define API URL with the input text and the whised number of results
         // Google Books API URL:
         // https://www.googleapis.com/books/v1/volumes?q=android&maxResults=1
+
+        if (numberResults < 1) {
+            numberResults =1;
+        }
+
         newUrl = "https://www.googleapis.com/books/v1/volumes?q=";
         newUrl += queryText;
         newUrl += "&maxResults=";
@@ -144,5 +149,3 @@ public class SearchActivity extends AppCompatActivity {
         return newUrl;
     }
 }
-
-
