@@ -1,15 +1,17 @@
 package com.example.android.booklisting;
 
 import android.content.Intent;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 
 public class SearchActivity extends AppCompatActivity {
@@ -47,7 +49,7 @@ public class SearchActivity extends AppCompatActivity {
 
         /* Local SeekBar Variables */
         int seekBarProgress = 0;
-        int maxNumberResults = 20;
+        int maxNumberResults = 40;
 
         /* Capture of edition fields */
         /* ************************* */

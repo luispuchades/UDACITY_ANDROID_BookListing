@@ -199,17 +199,20 @@ public final class QueryUtils {
                 String title = volumeInfo.getString("title");
 
                 // TODO: CHECK IF AUTHORS ARE CAPTURED PROPERLY AS AN ARRAY AT POSITION [0]
+                // String variable for authors
+                String authors;
                 // Extract the JSONArray corresponding to the key called "authors"
-                ArrayList<String> authorsArray = new ArrayList<String>();
-                JSONArray authorsJSONArray = volumeInfo.getJSONArray("authors");
+                ArrayList<String> authorsArray = new ArrayList<>();
+                JSONArray authorsJSONArray = volumeInfo.optJSONArray("authors");
                 if (authorsJSONArray != null ) {
                     for (int j = 0; j < authorsJSONArray.length(); j++){
                         authorsArray.add(authorsJSONArray.getString(j));
                     }
+                    // Extract authors Array at position 0
+                    authors = authorsArray.get(0);
+                } else {
+                    authors = "Unknown author";
                 }
-
-                // Extract authors Array at position 0
-                String authors = authorsArray.get(0);
 
                 // Extract the value for the key called "infoLink"
                 String infoLink = volumeInfo.getString("infoLink");
